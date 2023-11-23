@@ -6,16 +6,17 @@ body {
     display: flex; 
     justify-content: center;
     height: 100vh;
+    flex-direction: column;
+    
    
     align-items: center; 
     color: hsl(0, 0%, 100%);
 }
 
-.main-content {
+.rating-state, .thank-you-state {
     
 
-padding: 15px;
-padding-bottom: 5px;
+padding: 15px 20px 5px;
     border-radius: 5%;
     align-items: center;
     width: 50vh;
@@ -45,9 +46,17 @@ padding-bottom: 5px;
 }
 
 
+
+
 .rating-button:hover {
     background-color:hsl(25, 97%, 53%);
 }
+
+.rating-button:focus {
+    background-color:hsl(217, 12%, 63%);
+}
+
+
 
 .submit {
     background-color:hsl(25, 97%, 53%);
@@ -73,6 +82,7 @@ padding-bottom: 5px;
 p {
     color:  hsl(216, 12%, 54%);
     font-size: 15px;
+    line-height: 2rem;
 }
 
 .image-container {
