@@ -15,13 +15,79 @@ body {
 
 .rating-state, .thank-you-state {
     
-
-padding: 15px 20px 5px;
+    padding-top: 2rem;
+padding-left: 2rem;
+padding-right: 2rem;
     border-radius: 5%;
     align-items: center;
-    width: 50vh;
+    width: 45vh;
     height: 50vh;
     background-color: hsl(213, 19%, 18%);
+}
+
+
+.thank-you-state {
+    display: flex;
+    flex-direction: column;
+    padding: 0, 2rem, 0, 2rem;
+     margin:2rem;
+    justify-content: center; 
+}
+
+
+
+
+
+
+
+
+
+
+
+p {
+    color:  hsl(216, 12%, 54%);
+    font-size: 15px;
+    line-height: 1.5rem;
+
+    
+}
+
+.image-container {
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    background-color: hsl(211, 20%, 21%);
+    border-radius: 50%;
+    position: relative;
+}
+
+.icon-star {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+  
+/* ----buttons------ */
+
+.submit {
+    background-color:hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    height: 30px;
+    width: 100%;
+    margin-top: 30px;
+   
+
+}
+
+.submit:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%)
 }
 
 .rating-button {
@@ -45,9 +111,6 @@ padding: 15px 20px 5px;
    
 }
 
-
-
-
 .rating-button:hover {
     background-color:hsl(25, 97%, 53%);
 }
@@ -56,53 +119,11 @@ padding: 15px 20px 5px;
     background-color:hsl(217, 12%, 63%);
 }
 
-
-
-.submit {
-    background-color:hsl(25, 97%, 53%);
-    color: hsl(0, 0%, 100%);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border: none;
-    height: 30px;
-    width: 100%;
-    margin-top: 30px;
-   
-
-}
-
-.submit:hover {
-    background-color: white;
-    color: hsl(25, 97%, 53%)
-}
-
-
-p {
-    color:  hsl(216, 12%, 54%);
-    font-size: 15px;
-    line-height: 2rem;
-}
-
-.image-container {
-    background-color: white;
-    width: 45px;
-    height: 45px;
+.selected-rating {
+    margin-top: 1rem;
     background-color: hsl(211, 20%, 21%);
-    border-radius: 50%;
-    position: relative;
+    border-radius: 15px;
+   
+    color: hsl(25, 97%, 53%);
 }
 
-.icon-star {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-
-/* .rating {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
