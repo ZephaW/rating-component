@@ -16,41 +16,19 @@ body {
 
 
 
-p {
-    color:  hsl(216, 12%, 54%);
-    font-size: 15px;
-    line-height: 1.5rem;
 
-    
-}
-
-.image-container {
-    background-color: white;
-    width: 45px;
-    height: 45px;
-    background-color: hsl(211, 20%, 21%);
-    border-radius: 50%;
-    position: relative;
-}
-
-.icon-star {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
   
 /* ----buttons------ */
 
 .submit {
     background-color:hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     border: none;
-    height: 30px;
+    height: 100px;
     width: 100%;
     margin-top: 30px;
    
@@ -62,26 +40,22 @@ transform: translate(-50%, -50%);
     color: hsl(25, 97%, 53%)
 }
 
-.rating-button {
-    
-    width: 20%;
-    height: 45px;
-    border: none;
-    border-radius: 50%;
-    margin: 0 5px;
-    font-size: 16px;
-    color:  hsl(216, 12%, 54%);
-    cursor: pointer;
-    background-color: hsl(211, 20%, 21%);
-    transition: background-color 0.3s ease;
-}
+
 
 .rating-buttons { 
-    width: 100%;
-    padding-left: 0%;
+ justify-content: space-between;
     display: flex;
+    width: 100%;
    
 }
+
+.rating-button {
+   flex-grow: 1;
+   width: 45px;
+   height: 45px;
+   background-color: hsl(211, 20%, 21%);
+
+ }
 
 .rating-button:hover {
     background-color:hsl(25, 97%, 53%);
@@ -91,9 +65,55 @@ transform: translate(-50%, -50%);
     background-color:hsl(217, 12%, 63%);
 }
 
+
+/* --------rating-state--------- */
+p {
+    color:  hsl(216, 12%, 54%);
+    font-size: 15px;
+    line-height: 1.5rem;
+
+    
+}
+
+.image-container {
+   
+    width: 45px;
+    height: 100px;
+    background-color: hsl(211, 20%, 21%);
+    border-radius: 50%;
+    position: relative;
+}
+
+.icon-star {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.rating-state {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2.5rem 2rem;
+    border-radius: 5%;
+    
+    width: 45vh;
+    height: 45vh;
+    background-color: hsl(213, 19%, 18%);
+   
+    
+    margin:1rem, 2rem;
+    
+    
+}
+
+
+
+
 /* ---------thank-you-state-------- */
 
-.rating-state, .thank-you-state {
+.thank-you-state {
     
     padding: 2.5rem 2rem;
     /* padding-bottom: 2rem;
