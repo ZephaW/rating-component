@@ -7,8 +7,6 @@ body {
     justify-content: center;
     height: 100vh;
     flex-direction: column;
-    
-   
     align-items: center; 
     color: hsl(0, 0%, 100%);
 }
@@ -16,11 +14,10 @@ body {
 
 
 
-
   
 /* ----buttons------ */
 
-.submit {
+.submit-btn {
     background-color:hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
     border-top-left-radius: 20px;
@@ -28,9 +25,11 @@ body {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border: none;
-    height: 100px;
+    height: 40px;
     width: 100%;
     margin-top: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
    
 
 }
@@ -50,10 +49,12 @@ body {
 }
 
 .rating-button {
-   flex-grow: 1;
+   border-radius: 50%;
    width: 45px;
    height: 45px;
    background-color: hsl(211, 20%, 21%);
+   display: flex;
+   align-items: center;
 
  }
 
@@ -78,17 +79,24 @@ p {
 .image-container {
    
     width: 45px;
-    height: 100px;
-    background-color: hsl(211, 20%, 21%);
+    height: 45px;
+    background-color: hwb(211 17% 75%);
     border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .icon-star {
 position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+border-radius: 50%;
+
+/* max-width: 100%;
+max-height: 100%; */
 }
 
 .rating-state {
@@ -152,8 +160,8 @@ transform: translate(-50%, -50%);
 }
 
 h2 {
-    padding-top: 1rem;
-    margin-bottom: 0rem;
+    padding: 0;
+    margin: 0;
 }
 
 .thank-you-state, .appreciation {
