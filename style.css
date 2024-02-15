@@ -49,10 +49,7 @@ body {
 
 }
 
-/* .icon-star img {
-    width: 45%;
-    height: 40%;
-} */
+
 
 h1{
     color: hsl(0, 0%, 100%);
@@ -116,4 +113,42 @@ p {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+
+/* ----- thank-you-state--- */
+
+.thank-you-state {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    /* text-align: center; */
+}
+
+.selection {
+background-color: hsl(214, 15%, 22%);
+color: hsl(25, 97%, 53%);
+width: 60%;
+border-radius: 25px;
+font-size: 0.8em;
+text-align: center;
+padding: 0.3em 0.1em;
+margin: 0.8em 0;
+
+}
+
+.thank-you-state h1 {
+    font-size: 1.5em;
+}
+
+.thank-you-state p {
+    display: flex;
+    align-items: center;
+    
+  
+    
+    
 }
