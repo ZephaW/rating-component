@@ -8,17 +8,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 1440px;
 }
 
 body {
     font-family: 'Overpass', sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     min-height: 100vh;
     background-color: hsl(216, 12%, 8%);
    display: flex;
    justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .main-container {
@@ -153,12 +155,26 @@ margin: 0.8em 0;
 }
 
 
-@media screen { min-width: 768px; } {
+/* --- Medua Queries --- */ 
+
+@media screen and (min-width: 768px){
+    body {
+        font-size: 15px;
+    }
+
     .main-container {
-        max-width: 30%;
+        max-width: 50%;
+       
     }
-    
-    .icon-star {
-        width: 10%;
-        height: 10%;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+    body {
+        font-size: 16px;
     }
+
+    .main-container {
+        max-width: 40%;
+       
+    }
+}
