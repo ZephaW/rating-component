@@ -1,3 +1,7 @@
+
+/* --- General --- */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
 * {
@@ -26,6 +30,15 @@ body {
     display: flex;
     flex-direction: column;
    
+    h1{
+        color: hsl(0, 0%, 100%);
+        margin: 0.5em 0;
+    }
+    
+    p {
+        color: hsl(217, 12%, 63%);
+        line-height: 1.3em;
+    }
     
 
 
@@ -33,7 +46,7 @@ body {
    
     background-color: hsl(213, 19%, 18%);
     
-    
+    /* --- Rating State --- */
 }
 
 .icon-star {
@@ -48,20 +61,6 @@ body {
     padding: 0.5em;
 
 }
-
-
-
-h1{
-    color: hsl(0, 0%, 100%);
-    margin: 0.5em 0;
-}
-
-p {
-    color: hsl(217, 12%, 63%);
-    line-height: 1.3em;
-}
-
-
 
 .rating-button {
     color: hsl(217, 12%, 63%);
@@ -90,7 +89,6 @@ p {
 
 }
 
-
 .submit-button {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
@@ -106,14 +104,7 @@ p {
     color: hsl(25, 97%, 53%);
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
 
 
 
@@ -125,7 +116,7 @@ p {
     justify-content: center;
     align-items: center;
    
-    /* text-align: center; */
+   
 }
 
 .selection {
@@ -146,9 +137,28 @@ margin: 0.8em 0;
 
 .thank-you-state p {
     display: flex;
-    align-items: center;
-    
-  
-    
-    
+    text-align: center;
 }
+
+
+/* --- Attribution --- */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen { min-width: 768px; } {
+    .main-container {
+        max-width: 30%;
+    }
+    
+    .icon-star {
+        width: 10%;
+        height: 10%;
+    }
