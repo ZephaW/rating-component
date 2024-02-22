@@ -34,12 +34,12 @@ body {
    
     h1{
         color: hsl(0, 0%, 100%);
-        margin: 0.5em 0;
+        margin: 0.8em 0;
     }
     
     p {
         color: hsl(217, 12%, 63%);
-        line-height: 1.3em;
+        line-height: 1.5em;
     }
     
 
@@ -49,6 +49,10 @@ body {
     background-color: hsl(213, 19%, 18%);
     
     /* --- Rating State --- */
+}
+
+h1.thank-you {
+    margin-bottom: 0.5em;
 }
 
 .icon-star {
@@ -107,6 +111,9 @@ body {
     color: hsl(25, 97%, 53%);
 }
 
+.second-image {
+    margin-bottom: 1em;
+}
 
 
 
@@ -118,6 +125,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 1.5em 0;
    
    
 }
@@ -126,6 +134,7 @@ body {
 background-color: hsl(214, 15%, 22%);
 color: hsl(25, 97%, 53%);
 width: 60%;
+
 border-radius: 25px;
 font-size: 0.8em;
 text-align: center;
