@@ -92,6 +92,7 @@ body {
 }
 
 .submit-button {
+    width: 100%;
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
     padding: 1em;
