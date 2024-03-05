@@ -95,7 +95,7 @@ h1.thank-you {
 
 }
 
-.submit-button {
+.submit-button, .rate-again {
     width: 100%;
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
@@ -106,7 +106,7 @@ h1.thank-you {
     cursor: pointer;
 }
 
-.submit-button:hover {
+.submit-button:hover, .rate-again:hover {
     background-color: hsl(0, 0%, 100%);
     color: hsl(25, 97%, 53%);
 }
