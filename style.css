@@ -80,6 +80,11 @@ h1.thank-you {
 
 }
 
+.hidden {
+    display: none;
+}
+
+
 .rating-buttons {
     display: flex;
     justify-content: space-between;
